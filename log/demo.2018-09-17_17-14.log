@@ -1,2 +1,0 @@
-2018-09-17 17:14:38.807 demo [http-nio-80-exec-9] INFO  c.l.d.common.shiro.RedisSessionDAO - 获取session:e8773bca-0b92-44c3-9261-2181583da8a9
-2018-09-17 17:14:38.820 demo [http-nio-80-exec-9] INFO  c.l.d.common.shiro.RedisSessionDAO - 获取session:e8773bca-0b92-44c3-9261-2181583da8a9
