@@ -1,0 +1,103 @@
+2018-09-17 17:26:00.013 demo [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userDao' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-17 17:26:00.025 demo [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userDao' of type [com.sun.proxy.$Proxy95] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-17 17:26:00.029 demo [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userService' of type [cn.leap.demo.modules.system.service.UserService] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-17 17:26:00.053 demo [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'createMyRealm' of type [cn.leap.demo.common.shiro.ShiroRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-17 17:26:00.083 demo [main] INFO  c.l.d.c.s.ShiroConfig$$EnhancerBySpringCGLIB$$e73fddf0 - 自定义CacheManager
+2018-09-17 17:26:00.103 demo [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.redis-org.springframework.boot.autoconfigure.data.redis.RedisProperties' of type [org.springframework.boot.autoconfigure.data.redis.RedisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-17 17:26:00.115 demo [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration' of type [org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration$$EnhancerBySpringCGLIB$$e8117ba] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-17 17:26:00.312 demo [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'lettuceClientResources' of type [io.lettuce.core.resource.DefaultClientResources] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-17 17:26:00.442 demo [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConnectionFactory' of type [org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-17 17:26:00.525 demo [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisTemplate' of type [org.springframework.data.redis.core.RedisTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-17 17:26:00.579 demo [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'createCacheManager' of type [cn.leap.demo.common.shiro.RedisCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-17 17:26:00.581 demo [main] INFO  c.l.d.c.s.ShiroConfig$$EnhancerBySpringCGLIB$$e73fddf0 - 自定义sessionDao
+2018-09-17 17:26:00.588 demo [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'createRedisShiroSessionDao' of type [cn.leap.demo.common.shiro.RedisSessionDAO] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-17 17:26:00.594 demo [main] INFO  c.l.d.c.s.ShiroConfig$$EnhancerBySpringCGLIB$$e73fddf0 - 自定义SessionIdCookie
+2018-09-17 17:26:00.598 demo [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'createSessionIdCookie' of type [org.apache.shiro.web.servlet.SimpleCookie] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-17 17:26:00.603 demo [main] INFO  c.l.d.c.s.ShiroConfig$$EnhancerBySpringCGLIB$$e73fddf0 - 配置sessionManager
+2018-09-17 17:26:00.612 demo [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'createMySessionManager' of type [org.apache.shiro.web.session.mgt.DefaultWebSessionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-17 17:26:00.630 demo [main] INFO  c.l.d.c.s.ShiroConfig$$EnhancerBySpringCGLIB$$e73fddf0 - 自定义RemeberMeCookie
+2018-09-17 17:26:00.630 demo [main] INFO  c.l.d.c.s.ShiroConfig$$EnhancerBySpringCGLIB$$e73fddf0 - 配置RemeberMeManager
+2018-09-17 17:26:00.631 demo [main] INFO  c.l.d.c.s.ShiroConfig$$EnhancerBySpringCGLIB$$e73fddf0 - 配置rsecurityManager
+2018-09-17 17:26:00.647 demo [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'createSecurityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-17 17:26:00.691 demo [main] INFO  c.l.d.c.s.ShiroConfig$$EnhancerBySpringCGLIB$$e73fddf0 - Shiro拦截器工厂类注入成功
+2018-09-17 17:26:01.497 demo [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 80 (http)
+2018-09-17 17:26:01.534 demo [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2018-09-17 17:26:01.534 demo [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.32
+2018-09-17 17:26:01.549 demo [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [E:\Program Files\Java\jdk1.8.0_144\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;E:\Program Files\Java\jdk1.8.0_144\jre\bin;E:/Program Files/Java/jdk1.8.0_144/bin/../jre/bin/server;E:/Program Files/Java/jdk1.8.0_144/bin/../jre/bin;E:/Program Files/Java/jdk1.8.0_144/bin/../jre/lib/amd64;E:\Program Files\Java\jdk1.8.0_144\bin;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;D:\Program Files\TortoiseSVN\bin;E:\apache-maven-3.5.0\bin;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\VSShell\Common7\IDE\;C:\Program Files (x86)\Microsoft Visual Studio 9.0\Common7\IDE\PrivateAssemblies\;C:\Program Files (x86)\Microsoft SQL Server\100\DTS\Binn\;E:\eclipse;;.]
+2018-09-17 17:26:01.733 demo [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2018-09-17 17:26:01.733 demo [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 4720 ms
+2018-09-17 17:26:02.039 demo [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2018-09-17 17:26:02.045 demo [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-09-17 17:26:02.046 demo [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-09-17 17:26:02.046 demo [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-09-17 17:26:02.046 demo [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-09-17 17:26:02.046 demo [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'myFilter' to: [/*]
+2018-09-17 17:26:02.046 demo [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'shirFilter' to: [/*]
+2018-09-17 17:26:03.101 demo [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hello]}" onto public java.lang.String cn.leap.demo.modules.system.controller.HelloApplication.hello()
+2018-09-17 17:26:03.108 demo [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/register]}" onto public java.lang.String cn.leap.demo.modules.system.controller.UserController.register()
+2018-09-17 17:26:03.109 demo [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/getList]}" onto public cn.leap.demo.common.utils.EasyPage<cn.leap.demo.modules.system.model.User> cn.leap.demo.modules.system.controller.UserController.getUserList()
+2018-09-17 17:26:03.109 demo [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/get]}" onto public cn.leap.demo.modules.system.model.User cn.leap.demo.modules.system.controller.UserController.getUser()
+2018-09-17 17:26:03.110 demo [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/doLogin]}" onto public cn.leap.demo.modules.system.model.User cn.leap.demo.modules.system.controller.UserController.doLogin(cn.leap.demo.modules.system.model.User)
+2018-09-17 17:26:03.117 demo [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-09-17 17:26:03.119 demo [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-09-17 17:26:03.120 demo [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-09-17 17:26:03.124 demo [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-09-17 17:26:03.125 demo [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-09-17 17:26:03.572 demo [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2018-09-17 17:26:03.816 demo [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-17 17:26:04.207 demo [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@67c2e933: startup date [Mon Sep 17 17:25:57 CST 2018]; root of context hierarchy
+2018-09-17 17:26:04.304 demo [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-17 17:26:04.304 demo [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-17 17:26:05.310 demo [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-09-17 17:26:05.313 demo [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-09-17 17:26:05.320 demo [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-09-17 17:26:05.324 demo [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+2018-09-17 17:26:05.325 demo [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2018-09-17 17:26:05.350 demo [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2018-09-17 17:26:05.383 demo [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2018-09-17 17:26:05.651 demo [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 80 (http) with context path ''
+2018-09-17 17:26:05.656 demo [main] INFO  cn.leap.demo.Application - Started Application in 9.263 seconds (JVM running for 9.674)
+2018-09-17 17:26:21.674 demo [http-nio-80-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-09-17 17:26:21.675 demo [http-nio-80-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-09-17 17:26:21.707 demo [http-nio-80-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 32 ms
+2018-09-17 17:26:21.729 demo [http-nio-80-exec-1] INFO  o.a.s.s.m.AbstractValidatingSessionManager - Enabling session validation scheduler...
+2018-09-17 17:26:22.325 demo [http-nio-80-exec-10] INFO  c.l.d.common.shiro.RedisSessionDAO - 创建session:0a6b2dbd-489d-4ca2-b4fd-bd2c10a52c30
+2018-09-17 17:26:22.620 demo [http-nio-80-exec-10] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2018-09-17 17:26:22.621 demo [http-nio-80-exec-10] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2018-09-17 17:26:22.817 demo [http-nio-80-exec-10] INFO  c.l.d.common.shiro.RedisSessionDAO - 获取session:0a6b2dbd-489d-4ca2-b4fd-bd2c10a52c30
+2018-09-17 17:26:22.830 demo [http-nio-80-exec-10] INFO  c.l.d.common.shiro.RedisSessionDAO - 获取session:0a6b2dbd-489d-4ca2-b4fd-bd2c10a52c30
+2018-09-17 17:26:22.868 demo [http-nio-80-exec-7] INFO  c.l.d.common.shiro.RedisSessionDAO - 获取session:0a6b2dbd-489d-4ca2-b4fd-bd2c10a52c30
+2018-09-17 17:26:22.952 demo [http-nio-80-exec-1] INFO  c.l.d.common.shiro.RedisSessionDAO - 获取session:0a6b2dbd-489d-4ca2-b4fd-bd2c10a52c30
+2018-09-17 17:26:22.958 demo [http-nio-80-exec-1] INFO  c.l.d.common.shiro.RedisSessionDAO - 获取session:0a6b2dbd-489d-4ca2-b4fd-bd2c10a52c30
+2018-09-17 17:26:22.984 demo [http-nio-80-exec-6] INFO  c.l.d.common.shiro.RedisSessionDAO - 获取session:0a6b2dbd-489d-4ca2-b4fd-bd2c10a52c30
+2018-09-17 17:26:23.032 demo [http-nio-80-exec-9] INFO  c.l.d.common.shiro.RedisSessionDAO - 获取session:0a6b2dbd-489d-4ca2-b4fd-bd2c10a52c30
+2018-09-17 17:26:23.134 demo [http-nio-80-exec-5] INFO  c.l.d.common.shiro.RedisSessionDAO - 获取session:0a6b2dbd-489d-4ca2-b4fd-bd2c10a52c30
+2018-09-17 17:26:23.380 demo [http-nio-80-exec-3] INFO  c.l.d.common.shiro.RedisSessionDAO - 获取session:0a6b2dbd-489d-4ca2-b4fd-bd2c10a52c30
+2018-09-17 17:26:23.392 demo [http-nio-80-exec-3] INFO  c.l.d.common.shiro.RedisSessionDAO - 获取session:0a6b2dbd-489d-4ca2-b4fd-bd2c10a52c30
+2018-09-17 17:26:23.421 demo [http-nio-80-exec-2] INFO  c.l.d.common.shiro.RedisSessionDAO - 获取session:0a6b2dbd-489d-4ca2-b4fd-bd2c10a52c30
+2018-09-17 17:26:23.453 demo [http-nio-80-exec-4] INFO  c.l.d.common.shiro.RedisSessionDAO - 获取session:0a6b2dbd-489d-4ca2-b4fd-bd2c10a52c30
+2018-09-17 17:26:23.458 demo [http-nio-80-exec-4] INFO  c.l.d.common.shiro.RedisSessionDAO - 获取session:0a6b2dbd-489d-4ca2-b4fd-bd2c10a52c30
+2018-09-17 17:26:23.475 demo [http-nio-80-exec-8] INFO  c.l.d.common.shiro.RedisSessionDAO - 获取session:0a6b2dbd-489d-4ca2-b4fd-bd2c10a52c30
+2018-09-17 17:26:47.904 demo [http-nio-80-exec-1] INFO  c.l.d.common.shiro.RedisSessionDAO - 获取session:0a6b2dbd-489d-4ca2-b4fd-bd2c10a52c30
+2018-09-17 17:26:47.963 demo [http-nio-80-exec-9] INFO  c.l.d.common.shiro.RedisSessionDAO - 获取session:0a6b2dbd-489d-4ca2-b4fd-bd2c10a52c30
+2018-09-17 17:26:47.965 demo [http-nio-80-exec-6] INFO  c.l.d.common.shiro.RedisSessionDAO - 获取session:0a6b2dbd-489d-4ca2-b4fd-bd2c10a52c30
+2018-09-17 17:26:47.965 demo [http-nio-80-exec-5] INFO  c.l.d.common.shiro.RedisSessionDAO - 获取session:0a6b2dbd-489d-4ca2-b4fd-bd2c10a52c30
+2018-09-17 17:26:47.968 demo [http-nio-80-exec-2] INFO  c.l.d.common.shiro.RedisSessionDAO - 获取session:0a6b2dbd-489d-4ca2-b4fd-bd2c10a52c30
+2018-09-17 17:26:47.987 demo [http-nio-80-exec-3] INFO  c.l.d.common.shiro.RedisSessionDAO - 获取session:0a6b2dbd-489d-4ca2-b4fd-bd2c10a52c30
+2018-09-17 17:26:48.336 demo [http-nio-80-exec-4] INFO  c.l.d.common.shiro.RedisSessionDAO - 获取session:0a6b2dbd-489d-4ca2-b4fd-bd2c10a52c30
+2018-09-17 17:26:48.337 demo [http-nio-80-exec-8] INFO  c.l.d.common.shiro.RedisSessionDAO - 获取session:0a6b2dbd-489d-4ca2-b4fd-bd2c10a52c30
+2018-09-17 17:26:48.340 demo [http-nio-80-exec-4] INFO  c.l.d.common.shiro.RedisSessionDAO - 获取session:0a6b2dbd-489d-4ca2-b4fd-bd2c10a52c30
+2018-09-17 17:26:48.367 demo [http-nio-80-exec-10] INFO  c.l.d.common.shiro.RedisSessionDAO - 获取session:0a6b2dbd-489d-4ca2-b4fd-bd2c10a52c30
+2018-09-17 17:26:48.376 demo [http-nio-80-exec-7] INFO  c.l.d.common.shiro.RedisSessionDAO - 获取session:0a6b2dbd-489d-4ca2-b4fd-bd2c10a52c30
+2018-09-17 17:26:48.410 demo [http-nio-80-exec-1] INFO  c.l.d.common.shiro.RedisSessionDAO - 获取session:0a6b2dbd-489d-4ca2-b4fd-bd2c10a52c30
+2018-09-17 17:26:48.417 demo [http-nio-80-exec-1] INFO  c.l.d.common.shiro.RedisSessionDAO - 获取session:0a6b2dbd-489d-4ca2-b4fd-bd2c10a52c30
+2018-09-17 17:26:48.431 demo [http-nio-80-exec-9] INFO  c.l.d.common.shiro.RedisSessionDAO - 获取session:0a6b2dbd-489d-4ca2-b4fd-bd2c10a52c30
+2018-09-17 17:26:48.449 demo [http-nio-80-exec-5] INFO  c.l.d.common.shiro.RedisSessionDAO - 获取session:0a6b2dbd-489d-4ca2-b4fd-bd2c10a52c30
+2018-09-17 17:26:48.511 demo [http-nio-80-exec-6] INFO  c.l.d.common.shiro.RedisSessionDAO - 获取session:0a6b2dbd-489d-4ca2-b4fd-bd2c10a52c30
+2018-09-17 17:26:48.516 demo [http-nio-80-exec-2] INFO  c.l.d.common.shiro.RedisSessionDAO - 获取session:0a6b2dbd-489d-4ca2-b4fd-bd2c10a52c30
+2018-09-17 17:26:48.534 demo [http-nio-80-exec-2] INFO  c.l.d.common.shiro.RedisSessionDAO - 获取session:0a6b2dbd-489d-4ca2-b4fd-bd2c10a52c30
+2018-09-17 17:26:48.653 demo [http-nio-80-exec-3] INFO  c.l.d.common.shiro.RedisSessionDAO - 获取session:0a6b2dbd-489d-4ca2-b4fd-bd2c10a52c30
+2018-09-17 17:26:48.672 demo [http-nio-80-exec-8] INFO  c.l.d.common.shiro.RedisSessionDAO - 获取session:0a6b2dbd-489d-4ca2-b4fd-bd2c10a52c30
+2018-09-17 17:26:48.674 demo [http-nio-80-exec-8] INFO  c.l.d.common.shiro.RedisSessionDAO - 获取session:0a6b2dbd-489d-4ca2-b4fd-bd2c10a52c30
+2018-09-17 17:26:48.686 demo [http-nio-80-exec-4] INFO  c.l.d.common.shiro.RedisSessionDAO - 获取session:0a6b2dbd-489d-4ca2-b4fd-bd2c10a52c30
+2018-09-17 17:26:56.431 demo [http-nio-80-exec-10] INFO  c.l.d.common.shiro.RedisSessionDAO - 获取session:0a6b2dbd-489d-4ca2-b4fd-bd2c10a52c30

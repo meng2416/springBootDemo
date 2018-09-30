@@ -1,0 +1,11 @@
+2018-09-17 17:07:29.759 demo [http-nio-80-exec-2] INFO  o.a.tomcat.util.http.parser.Cookie - A cookie header was received [1533881816,1534129009] that contained an invalid cookie. That cookie will be ignored.Note: further occurrences of this error will be logged at DEBUG level.
+2018-09-17 17:07:29.763 demo [http-nio-80-exec-2] INFO  c.l.d.common.shiro.RedisSessionDAO - 创建session:fbbad631-4d9f-4785-aa31-c17a68f177bb
+2018-09-17 17:07:29.766 demo [http-nio-80-exec-2] INFO  c.l.d.common.shiro.RedisSessionDAO - 获取session:fbbad631-4d9f-4785-aa31-c17a68f177bb
+2018-09-17 17:07:29.770 demo [http-nio-80-exec-2] INFO  c.l.d.common.shiro.RedisSessionDAO - 获取session:fbbad631-4d9f-4785-aa31-c17a68f177bb
+2018-09-17 17:07:29.785 demo [http-nio-80-exec-3] INFO  c.l.d.common.shiro.RedisSessionDAO - 获取session:fbbad631-4d9f-4785-aa31-c17a68f177bb
+2018-09-17 17:07:36.386 demo [http-nio-80-exec-9] INFO  c.l.d.common.shiro.RedisSessionDAO - 获取session:fbbad631-4d9f-4785-aa31-c17a68f177bb
+2018-09-17 17:07:36.388 demo [http-nio-80-exec-9] INFO  c.l.d.common.shiro.RedisSessionDAO - 获取session:fbbad631-4d9f-4785-aa31-c17a68f177bb
+2018-09-17 17:07:36.400 demo [http-nio-80-exec-1] INFO  c.l.d.common.shiro.RedisSessionDAO - 获取session:fbbad631-4d9f-4785-aa31-c17a68f177bb
+2018-09-17 17:07:36.543 demo [http-nio-80-exec-8] INFO  c.l.d.common.shiro.RedisSessionDAO - 获取session:fbbad631-4d9f-4785-aa31-c17a68f177bb
+2018-09-17 17:07:36.547 demo [http-nio-80-exec-8] INFO  c.l.d.common.shiro.RedisSessionDAO - 获取session:fbbad631-4d9f-4785-aa31-c17a68f177bb
+2018-09-17 17:07:36.565 demo [http-nio-80-exec-2] INFO  c.l.d.common.shiro.RedisSessionDAO - 获取session:fbbad631-4d9f-4785-aa31-c17a68f177bb

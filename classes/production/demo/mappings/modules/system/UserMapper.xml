@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.leap.demo.modules.system.dao.UserDao">
+
+	<!-- 数据版本号字段全局共用 可在全文修改语句中调用 -->
+	<sql id="addVersionValue">
+		Version = Version + 1,
+	</sql>
+	<sql id="commonFieldsList">
+		,State, CreateTime, SysFlag, Creater, Editer,
+		EditTime,Version
+	</sql>
+	<sql id="whereVersion">
+		and Version &lt;= #{version,jdbcType=BIGINT}
+	</sql>
+	<sql id="insertCommonParm">
+		Sort,
+		<if test="creater != null">
+			Creater,
+		</if>
+		<if test="editer != null">
+			Editer,
+		</if>
+		<if test="editTime != null">
+			EditTime,
+		</if>
+		<if test="createTime != null">
+			CreateTime,
+		</if>
+		<if test="state != null">
+			State,
+		</if>
+		<if test="sysFlag != null">
+			SysFlag,
+		</if>
+		<if test="version != null">
+			Version,
+		</if>
+	</sql>
+	<sql id="insertCommonResult">
+		<if test="sort == null">
+			case when max(sort) is null then 1 else max(sort)+1 end,
+		</if>
+		<if test="sort != null">
+			#{sort,jdbcType=DECIMAL},
+		</if>
+		<if test="creater != null">
+			#{creater,jdbcType=BIGINT},
+		</if>
+		<if test="editer != null">
+			#{editer,jdbcType=BIGINT},
+		</if>
+		<if test="editTime != null">
+			#{editTime,jdbcType=TIMESTAMP},
+		</if>
+		<if test="createTime != null">
+			#{createTime,jdbcType=TIMESTAMP},
+		</if>
+		<if test="state != null">
+			#{state,jdbcType=INTEGER},
+		</if>
+		<if test="sysFlag != null">
+			#{sysFlag,jdbcType=BIT},
+		</if>
+		<if test="version != null">
+			#{version,jdbcType=BIGINT},
+		</if>
+	</sql>
+	<sql id="updateCommon">
+		<if test="sort != null">
+			Sort = #{sort,jdbcType=DECIMAL},
+		</if>
+		<if test="creater != null">
+			Creater = #{creater,jdbcType=BIGINT},
+		</if>
+		<if test="editer != null">
+			Editer = #{editer,jdbcType=BIGINT},
+		</if>
+		<if test="editTime != null">
+			EditTime = #{editTime,jdbcType=TIMESTAMP},
+		</if>
+		<if test="createTime != null">
+			CreateTime = #{createTime,jdbcType=TIMESTAMP},
+		</if>
+		<if test="state != null">
+			State = #{state,jdbcType=INTEGER},
+		</if>
+		<if test="sysFlag != null">
+			SysFlag = #{sysFlag,jdbcType=BIT},
+		</if>
+		Version = Version + 1,
+	</sql>
+
+	<sql id="Base_Column_List">
+		UserId, DeptID, LoginName, Password, Nickname, RealName, MainPhone,
+		OtherPhone, Email
+		<include refid="commonFieldsList" />
+	</sql>
+	
+	<!-- 依据用户ID查询用户信息 -->
+	<select id="get"
+		resultType="cn.leap.demo.modules.system.model.User"
+		parameterType="cn.leap.demo.modules.system.model.User">
+		select
+		<include refid="Base_Column_List" />
+		from t_user
+        <where>
+            <if test="userId != null">
+               AND UserId = #{userId,jdbcType=BIGINT}
+            </if>
+            <if test="state!=null">
+                AND state = #{state}
+            </if>
+        </where>
+	</select>
+	
+	<insert id="insert"
+		parameterType="cn.leap.demo.modules.system.model.User"
+		useGeneratedKeys="true" keyProperty="userId">
+		insert into t_user
+		<trim prefix="(" suffix=")" suffixOverrides=",">
+			<if test="deptId != null">
+				DeptID,
+			</if>
+			<if test="loginName != null">
+				LoginName,
+			</if>
+			<if test="password != null">
+				Password,
+			</if>
+			<if test="nickName != null">
+				Nickname,
+			</if>
+			<if test="realName != null">
+				RealName,
+			</if>
+			<if test="mainPhone != null">
+				MainPhone,
+			</if>
+			<if test="otherPhone != null">
+				OtherPhone,
+			</if>
+			<if test="email != null">
+				Email,
+			</if>
+			<if test="state != null">
+				State,
+			</if>
+			<if test="createTime != null">
+				CreateTime,
+			</if>
+			<if test="sysFlag != null">
+				SysFlag,
+			</if>
+			<if test="creater != null">
+				Creater,
+			</if>
+			<if test="editer != null">
+				Editer,
+			</if>
+			<if test="editTime != null">
+				EditTime,
+			</if>
+		</trim>
+		<trim prefix="values (" suffix=")" suffixOverrides=",">
+			<if test="deptId != null">
+				#{deptId,jdbcType=BIGINT},
+			</if>
+			<if test="loginName != null">
+				#{loginName,jdbcType=VARCHAR},
+			</if>
+			<if test="password != null">
+				#{password,jdbcType=VARCHAR},
+			</if>
+			<if test="nickName != null">
+				#{nickName,jdbcType=VARCHAR},
+			</if>
+			<if test="realName != null">
+				#{realName,jdbcType=VARCHAR},
+			</if>
+			<if test="mainPhone != null">
+				#{mainPhone,jdbcType=VARCHAR},
+			</if>
+			<if test="otherPhone != null">
+				#{otherPhone,jdbcType=VARCHAR},
+			</if>
+			<if test="email != null">
+				#{email,jdbcType=VARCHAR},
+			</if>
+			<if test="state != null">
+				#{state,jdbcType=INTEGER},
+			</if>
+			<if test="createTime != null">
+				#{createTime,jdbcType=TIMESTAMP},
+			</if>
+			<if test="sysFlag != null">
+				#{sysFlag,jdbcType=BIT},
+			</if>
+			<if test="creater != null">
+				#{creater,jdbcType=BIGINT},
+			</if>
+			<if test="editer != null">
+				#{editer,jdbcType=BIGINT},
+			</if>
+			<if test="editTime != null">
+				#{editTime,jdbcType=TIMESTAMP},
+			</if>
+		</trim>
+	</insert>
+
+	<update id="update"
+		parameterType="cn.leap.demo.modules.system.model.User">
+		update t_user
+		<set>
+			<if test="deptId != null">
+				DeptID = #{deptId,jdbcType=BIGINT},
+			</if>
+			<if test="loginName != null">
+				LoginName = #{loginName,jdbcType=VARCHAR},
+			</if>
+			<if test="password != null">
+				Password = #{password,jdbcType=VARCHAR},
+			</if>
+			<if test="nickName != null">
+				Nickname = #{nickName,jdbcType=VARCHAR},
+			</if>
+			<if test="realName != null">
+				RealName = #{realName,jdbcType=VARCHAR},
+			</if>
+			<if test="mainPhone != null">
+				MainPhone = #{mainPhone,jdbcType=VARCHAR},
+			</if>
+			<if test="otherPhone != null">
+				OtherPhone = #{otherPhone,jdbcType=VARCHAR},
+			</if>
+			<if test="email != null">
+				Email = #{email,jdbcType=VARCHAR},
+			</if>
+			<if test="state != null">
+				State = #{state,jdbcType=INTEGER},
+			</if>
+			<if test="createTime != null">
+				CreateTime = #{createTime,jdbcType=TIMESTAMP},
+			</if>
+			<if test="sysFlag != null">
+				SysFlag = #{sysFlag,jdbcType=BIT},
+			</if>
+			<if test="creater != null">
+				Creater = #{creater,jdbcType=BIGINT},
+			</if>
+			<if test="editer != null">
+				Editer = #{editer,jdbcType=BIGINT},
+			</if>
+			<if test="editTime != null">
+				EditTime = #{editTime,jdbcType=TIMESTAMP},
+			</if>
+			<!-- 引用全文共用sql片段 版本号修改语句 -->
+			<include refid="addVersionValue" />
+		</set>
+		where UserId = #{userId,jdbcType=BIGINT}
+		<include refid="whereVersion" />
+	</update>
+	
+	<select id="getUserList" resultType="cn.leap.demo.modules.system.model.User"
+		parameterType="cn.leap.demo.modules.system.model.User">
+		select
+		<include refid="Base_Column_List" />
+		from t_user
+        <where>
+            <if test="state!=null">
+                AND state = #{state}
+            </if>
+        </where>
+	</select>
+	
+	 <select id="loginCheck" resultType="cn.leap.demo.modules.system.model.User">
+        select * FROM t_user  
+        <where>
+        	AND State = 100
+        	<if test="loginName != null and password !=null" >
+            	AND LoginName =#{loginName,jdbcType=VARCHAR}
+            	AND Password = #{password,jdbcType=VARCHAR}
+        	</if>
+        </where>
+    </select>
+</mapper>
