@@ -25,7 +25,12 @@ public class UserController {
 
 	@Autowired
 	private UserService userService;
-	
+
+	/**
+	 * 访问链接：/user/get
+	 * @param name
+	 * @return
+	 */
 	@ApiOperation(value = "获取用户", notes = "根据用户名，获取用户")
 	@ApiImplicitParam(name = "name", value = "用户名", required = true, dataType = "String")
 	@GetMapping(value = "/get")
@@ -33,14 +38,24 @@ public class UserController {
 		log.info("测试获取数据");
 		return userService.getUser();
 	}
-	
+
+	/**
+	 * 访问链接：/user/getList
+	 * @param name
+	 * @return
+	 */
 	@ApiOperation(value = "获取用户list", notes = "测试，获取用户list")
 	@ApiImplicitParam(name = "name", value = "用户名", required = true, dataType = "String")
 	@GetMapping(value = "/getList")
 	public EasyPage<User> getUserList(String name){
 		return userService.getUserList();
 	}
-	
+
+	/**
+	 * 访问链接：/user/doLogin?loginName=admin&password=123456
+	 * @param user
+	 * @return
+	 */
 	@ApiOperation(value = "登入", notes = "根据用户名，密码登入")
 	@ApiImplicitParams({
 		@ApiImplicitParam(name = "loginName", value = "登入名", required = true, dataType = "String"),
