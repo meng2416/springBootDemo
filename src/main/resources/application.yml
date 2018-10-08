@@ -13,7 +13,16 @@ spring:
   devtools:
     restart:
       exclude: static/**,public/**
- 
+
+  #线程池配置
+  task:
+    pool:
+      corePoolSize: 4
+      maxPoolSize: 8
+      keepAliveSeconds: 60
+      queueCapacity: 20
+
+
 # 配置mybatis-plus
 mybatis-plus:
   # 配置扫描xml
