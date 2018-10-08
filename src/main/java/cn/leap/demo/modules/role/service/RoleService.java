@@ -1,6 +1,6 @@
-package cn.leap.demo.modules.es.service;
+package cn.leap.demo.modules.role.service;
 
-import cn.leap.demo.modules.es.model.Role;
+import cn.leap.demo.modules.role.model.Role;
 import com.baomidou.mybatisplus.service.IService;
 
 /**

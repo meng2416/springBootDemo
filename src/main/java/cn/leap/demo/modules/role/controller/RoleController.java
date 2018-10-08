@@ -1,13 +1,12 @@
-package cn.leap.demo.modules.es.controller;
+package cn.leap.demo.modules.role.controller;
 
 
+import cn.leap.demo.modules.role.model.Role;
+import cn.leap.demo.modules.role.serviceImpl.RoleServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
-import cn.leap.demo.modules.es.model.Role;
-import cn.leap.demo.modules.es.service.RoleService;
 
 /**
  * <p>
@@ -21,12 +20,11 @@ import cn.leap.demo.modules.es.service.RoleService;
 @RequestMapping("/role")
 public class RoleController {
 	@Autowired
-    private RoleService roleService;
+    private RoleServiceImpl roleServiceImpl;
  
     @GetMapping(value = "/show")
     public Role testEnum() {
-    	Role role = roleService.selectById(1);
-        return role;
+    	return roleServiceImpl.selectById(1);
     }
 
 }

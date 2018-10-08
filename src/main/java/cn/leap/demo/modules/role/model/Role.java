@@ -1,4 +1,4 @@
-package cn.leap.demo.modules.es.model;
+package cn.leap.demo.modules.role.model;
 
 import com.baomidou.mybatisplus.enums.IdType;
 import java.util.Date;

@@ -1,6 +1,6 @@
-package cn.leap.demo.modules.es.dao;
+package cn.leap.demo.modules.role.dao;
 
-import cn.leap.demo.modules.es.model.Role;
+import cn.leap.demo.modules.role.model.Role;
 import com.baomidou.mybatisplus.mapper.BaseMapper;
 
 /**

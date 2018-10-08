@@ -1,12 +1,12 @@
-package cn.leap.demo.modules.es.serviceImpl;
+package cn.leap.demo.modules.role.serviceImpl;
 
 import org.springframework.stereotype.Component;
 
 import com.baomidou.mybatisplus.service.impl.ServiceImpl;
 
-import cn.leap.demo.modules.es.dao.RoleDao;
-import cn.leap.demo.modules.es.model.Role;
-import cn.leap.demo.modules.es.service.RoleService;
+import cn.leap.demo.modules.role.dao.RoleDao;
+import cn.leap.demo.modules.role.model.Role;
+import cn.leap.demo.modules.role.service.RoleService;
 
 /**
  * <p>
