@@ -1,4 +1,4 @@
-package cn.leap.demo.common.key;
+package cn.leap.demo.common.key.rsa;
 
 import java.security.Signature;
 
