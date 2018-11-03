@@ -66,15 +66,15 @@ public class CodeGeneration {
         dsc.setDbType(DbType.MYSQL);
         dsc.setDriverName("com.mysql.jdbc.Driver");
         dsc.setUsername("root");
-        dsc.setPassword("123456");
-        dsc.setUrl("jdbc:mysql://127.0.0.1:3306/iottest");
+        dsc.setPassword("");
+        dsc.setUrl("jdbc:mysql://192.168.1.166:3306/sms");
         mpg.setDataSource(dsc);
 
         // 策略配置
         StrategyConfig strategy = new StrategyConfig();
         strategy.setTablePrefix(new String[] { "t_" });// 此处可以修改为您的表前缀
         strategy.setNaming(NamingStrategy.underline_to_camel);// 表名生成策略
-        strategy.setInclude(new String[] { "t_role" }); // 需要生成的表
+        strategy.setInclude(new String[] { "t_smstemplate" }); // 需要生成的表
 
         strategy.setSuperServiceClass(null);
         strategy.setSuperServiceImplClass(null);
@@ -84,7 +84,7 @@ public class CodeGeneration {
 
         // 包配置
         PackageConfig pc = new PackageConfig();
-        pc.setParent("cn.leap.demo.modules.es");
+        pc.setParent("cn1.leap.demo.modules.es");
         pc.setController("controller");
         pc.setService("service");
         pc.setServiceImpl("serviceImpl");

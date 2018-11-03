@@ -1,4 +1,4 @@
-package cn.leap.demo.common.key.rsa;
+package cn.leap.demo.common.key.rsa1;
 
 import java.security.KeyFactory;
 import java.security.PrivateKey;

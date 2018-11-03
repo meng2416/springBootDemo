@@ -1,8 +1,4 @@
-package cn.leap.demo.common.key.rsa;
-
-import cn.leap.demo.common.key.rsa.KeyGenerater;
-import cn.leap.demo.common.key.rsa.SignProvider;
-import cn.leap.demo.common.key.rsa.Signaturer;
+package cn.leap.demo.common.key.rsa1;
 
 public class Test {
 	
